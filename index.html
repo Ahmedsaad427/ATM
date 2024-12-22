@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Your Account</h1>
+        <div id="balanceDisplay">
+            <p>Your current balance is: <span id="balanceAmount">24900</span> USD</p>
+        </div>
+
+        <div class="menu">
+            <button onclick="balanceInquiry()">Balance Inquiry</button>
+            <button onclick="withdraw()">Withdraw Money</button>
+            <button onclick="depositMoney()">Deposit Money</button>
+            <button onclick="exitProgram()">Exit</button>
+        </div>
+        
+        <div id="withdrawOptions" class="hidden">
+            <h2>Choose Withdrawal Amount</h2>
+            <button onclick="handleWithdraw(500)">500 USD</button>
+            <button onclick="handleWithdraw(1000)">1,000 USD</button>
+            <button onclick="handleWithdraw(3000)">3,000 USD</button>
+            <button onclick="handleWithdraw(5000)">5,000 USD</button>
+            <button onclick="handleWithdraw(10000)">10,000 USD</button>
+            <button onclick="handleWithdraw(15000)">15,000 USD</button>
+            <button onclick="handleWithdraw(20000)">20,000 USD</button>
+            <button onclick="goBackToMainMenu()">Go Back</button>
+        </div>
+
+        <div id="depositOptions" class="hidden">
+            <h2>Choose Deposit Amount</h2>
+            <button onclick="handleDeposit(500)">500 USD</button>
+            <button onclick="handleDeposit(1000)">1,000 USD</button>
+            <button onclick="handleDeposit(3000)">3,000 USD</button>
+            <button onclick="handleDeposit(5000)">5,000 USD</button>
+            <button onclick="handleDeposit(10000)">10,000 USD</button>
+            <button onclick="handleDeposit(15000)">15,000 USD</button>
+            <button onclick="handleDeposit(20000)">20,000 USD</button>
+            <button onclick="goBackToMainMenu()">Go Back</button>
+        </div>
+
+        <div id="thankYouMessage" class="hidden">
+            <h2>Thank You For Banking With Us!</h2>
+        </div>
+    </div>
+
+    <script src="bankingSystem.js"></script> <!-- Link to JS file -->
+
+</body>
+</html>
